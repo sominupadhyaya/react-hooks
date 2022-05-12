@@ -10,7 +10,7 @@ const useResources = (resource) => {
   }
 
   useEffect(() => {
-    fetchResource(resource) // cannot return a promise can call async funcs but it shouldnt return promise
+    fetchResource(resource) // cannot return a promise can call async funcs and should return only functions
   }, [resource])
 
   return resources
